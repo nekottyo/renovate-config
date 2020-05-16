@@ -1,0 +1,28 @@
+{
+  "name": "@nekottyo/renovate-config",
+  "version": "0.0.1",
+  "description": "",
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base",
+        "schedule:nonOfficeHours",
+        "docker:enableMajor",
+        ":automergeMinor",
+        ":automergeRequireAllStatusChecks",
+        ":label(renovate)",
+        ":timezone(JST)"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekottyo/renovate-config.git"
+  },
+  "author": "nekottyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekottyo/renovate-config/issues"
+  },
+  "homepage": "https://github.com/nekottyo/renovate-config#readme"
+}
