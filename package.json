@@ -11,9 +11,12 @@
         ":automergeMinor",
         ":automergeRequireAllStatusChecks",
         ":label(renovate)",
-        ":timezone(JST)"
+        ":timezone(Asia/Tokyo)"
       ]
     }
+  },
+  "scripts": {
+      "test": "renovate-config-validator"
   },
   "repository": {
     "type": "git",
@@ -24,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/nekottyo/renovate-config/issues"
   },
-  "homepage": "https://github.com/nekottyo/renovate-config#readme"
+  "homepage": "https://github.com/nekottyo/renovate-config#readme",
+  "devDependencies": {
+    "renovate": "^19.239.7"
+  }
 }
