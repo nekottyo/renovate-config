@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/nekottyo/renovate-config#readme",
   "devDependencies": {
-    "renovate": "20.10.2"
+    "renovate": "20.11.0"
   },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
