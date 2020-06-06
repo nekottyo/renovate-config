@@ -18,6 +18,8 @@ jobs:
       with:
         node-version: 12.x
 
+    - run: git checkout master
+
     - name: set .npmrc
       run: echo "${NPMRC}" > ~/.npmrc
       env:
