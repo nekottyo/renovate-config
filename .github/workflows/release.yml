@@ -18,12 +18,17 @@ jobs:
       with:
         node-version: 12.x
 
-    - run: npm install
-
     - name: set .npmrc
       run: echo "${NPMRC}" > ~/.npmrc
       env:
         NPMRC: ${{ secrets.NPMRC }}
+
+    - run: |
+        git config --global user.name "nekottyo"
+        git config --global user.email "nekottyo@users.noreply.github.com"
+
+    - run: npm install
+
 
     - name: release-it
       run: npm run release -- patch --ci --no-git.requireCleanWorkingDir
