@@ -18,7 +18,17 @@ jobs:
         node-version: 12.x
 
     - name: release-it
-      run: npm run release -- minor --ci
+      run: npm run release -- patch --ci
       env:
         GITHUB_TOKEN: "${{ secrets.NPM_TOKEN }}"
 
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false

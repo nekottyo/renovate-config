@@ -36,10 +36,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "public"
-  },
-  "release-it": {
-    "github": {
-      "release": true
-    }
   }
 }
