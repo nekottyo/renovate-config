@@ -1,6 +1,6 @@
 {
   "name": "@nekottyo/renovate-config",
-  "version": "0.0.0-development",
+  "version": "0.0.5",
   "description": "",
   "renovate-config": {
     "default": {
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "renovate-config-validator",
-    "semantic-release": "semantic-release"
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
