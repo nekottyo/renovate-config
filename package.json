@@ -1,6 +1,6 @@
 {
   "name": "@nekottyo/renovate-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "renovate-config": {
     "default": {
@@ -37,8 +37,8 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "release-it": {
-      "git": {
-        "commitMessage": "[scip-ci] chore: release v${version}"
-      }
+    "git": {
+      "commitMessage": "[scip-ci] chore: release v${version}"
+    }
   }
 }
