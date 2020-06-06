@@ -16,3 +16,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
+    - run: |
+        npx release-it -- minor --ci
