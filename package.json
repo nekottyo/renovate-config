@@ -38,8 +38,10 @@
   },
   "release-it": {
     "git": {
-      "release": true,
       "commitMessage": "[scip-ci] chore: release v${version}"
+    },
+    "github": {
+      "release": true
     }
   }
 }
