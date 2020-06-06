@@ -34,8 +34,7 @@
     "renovate": "20.25.8"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "release-it": {
       "git": {
