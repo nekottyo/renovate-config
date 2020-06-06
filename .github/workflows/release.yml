@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  release:
 
     runs-on: ubuntu-latest
 
@@ -16,5 +16,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: |
-        npx release-it -- minor --ci
+
+    - name: release-it
+      run: npx release-it -- minor --ci
+      env:
+        GITHUB_TOKEN: "${{ secrets.NPM_TOKEN }}"
+
