@@ -1,6 +1,6 @@
 {
   "name": "@nekottyo/renovate-config",
-  "version": "0.0.5",
+  "version": "0.0.0-development",
   "description": "",
   "renovate-config": {
     "default": {
@@ -30,12 +30,16 @@
   },
   "homepage": "https://github.com/nekottyo/renovate-config#readme",
   "devDependencies": {
-    "@semantic-release/changelog": "5.0.1",
-    "@semantic-release/git": "9.0.0",
-    "renovate": "20.25.8",
-    "semantic-release": "17.0.8"
+    "release-it": "^13.6.2",
+    "renovate": "20.25.8"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    }
   }
 }
