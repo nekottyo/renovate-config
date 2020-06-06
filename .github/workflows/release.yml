@@ -17,7 +17,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
+
     - run: npm install
+
+    - name: set .npmrc
+      run: echo ${NPMRC} > ~/.npmrc
+      env:
+        NPMRC: ${{ secrets.NPMRC }}
 
     - name: release-it
       run: npm run release -- patch --ci
