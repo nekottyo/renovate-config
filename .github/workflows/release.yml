@@ -35,4 +35,4 @@ jobs:
     - name: release-it
       run: npm run release -- patch --ci --no-git.requireCleanWorkingDir
       env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        GITHUB_TOKEN: "${{ secrets.NPM_TOKEN }}"
