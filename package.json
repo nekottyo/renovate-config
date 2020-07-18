@@ -1,6 +1,6 @@
 {
   "name": "@nekottyo/renovate-config",
-  "version": "0.2.68",
+  "version": "0.2.69",
   "description": "",
   "renovate-config": {
     "default": {
