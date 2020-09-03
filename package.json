@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/nekottyo/renovate-config#readme",
   "devDependencies": {
-    "release-it": "13.7.0",
+    "release-it": "13.7.1",
     "renovate": "21.33.15"
   },
   "publishConfig": {
