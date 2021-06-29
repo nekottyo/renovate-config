@@ -39,7 +39,7 @@
   },
   "release-it": {
     "git": {
-      "commitMessage": "[scip-ci] chore: release v${version}"
+      "commitMessage": "[skip-ci] chore: release v${version}"
     },
     "github": {
       "release": true
