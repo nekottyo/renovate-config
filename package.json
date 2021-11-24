@@ -31,7 +31,7 @@
   "homepage": "https://github.com/nekottyo/renovate-config#readme",
   "devDependencies": {
     "release-it": "14.6.2",
-    "renovate": "23.100.5"
+    "renovate": "24.119.10"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
